@@ -1,0 +1,65 @@
+environment, # environment block
+  method_pointer= 'UQ' # this tells dakota which method to start with.
+  tabular_data # this tells dakota to save all evaluations in a tabular file, default name is dakota_tabular.dat
+
+method, # method block
+    id_method = 'UQ'
+    bayes_calibration dream
+    samples = 1000
+    seed = 83497
+
+variables, # variables block
+  active all
+  continuous_design = 2       # 2 dimensions
+    descriptors       'X1' 'X2' # these names should match the names in the yaml input file
+    lower_bounds      -2.0 -2.0  #
+    upper_bounds      2*2.0   # use 2 copies of 2.0 for bound
+
+interface, # interface block
+  fork # use a fork interface
+  asynchronous # permit asynchronous evaluation
+  evaluation_concurrency = 1 # evaluation can have concurrency of 1
+                             # (this is useful if you have a method that can
+                             # take advantage of multiple cores)
+  analysis_driver = 'python herbie_driver.py' # this is what dakota will evaluate
+  #analysis_driver = 'python ../../herbie_driver.py' # use this one if you are running from a work directory
+
+  # analysis driver needs to:
+  # 1) do any preprocessing necessary to go from params.in to a required input file
+  # 2) start the model
+  # 3) do any postprocessing necessary to to from model output to the outputs desired
+  # by results.out
+
+  # this will result in dakota calling python herbie_driver.py params.in results.out
+  # so in python, sys.argv[0] = 'python ../../herbie_driver.py'
+  #               sys.argv[1] = 'params.in'
+  #               sys.argv[2] = 'results.out'
+
+  parameters_file = 'params.in' # name of parameters file, this is what dakota will create
+                                # dakota expects that if it creates this file, and evaluates the line
+                                # listed in "analysis_driver" the model will run and the outputs will
+                                # be listed in the order provided in the responses block in the file
+                                # with the name given in results_file
+
+  results_file = 'results.out'  # names of results file, this is what dakota will look for to
+                                # determine that the model run is completed
+
+#  copy_files 'inputs_template.txt' # if we were running evaluations in saved directories,
+                                    # we'd want to copy the inputs_template.txt into those
+                                    # work directories.
+
+  # file_save # save the params.in and results.out files
+  # work_directory # run the model in its own directory
+  #  named 'evals/run'  # the name of the directory (if a relative path is given, it will make)
+                        # directories relative to the dakota .in file. giving an abspath also works
+  #  directory_save     # save the work directory
+  #  directory_tag      # give the work directory a unique name
+
+
+responses, # responses block
+    calibration_terms = 1
+    descriptors = 'out'
+    calibration_data_file = 'data.dat' # you can provide a data file, in which dakota will calculate the residual for you
+      freeform
+    no_gradients
+    no_hessians
