@@ -1,0 +1,22 @@
+#!/bin/csh
+set FULL_BAS_DIR = $1	
+mkdir $FULL_BAS_DIR
+
+foreach F(test*)
+echo $F
+./process_skagit.txt $F
+./process_AggValuesPrecip.txt $F
+./myconvert float ascii $F/balance_sum.bin $F/balance_sum.asc 386 386
+./myconvert float ascii $F/Map.Snow.Iwq.bin $F/Map.Snow.Iwq.asc 5404 386
+./myconvert float ascii $F/Map.Soil.TableDepth.bin $F/Map.Soil.TableDepth.asc 5404 386
+./myconvert float ascii $F/Map.Snow.Swq.bin $F/Map.Snow.Swq.asc 5018 386
+cp $F/SaukRiver_nrSauk.streamflow.daily.cms.txt $F/12189500.streamflow.daily.cms.txt
+cp BalanceGlacierOutputScript.txt $F/
+cp agg_time.pl $F/
+
+mkdir $FULL_BAS_DIR/$F
+cp $F/*.txt $FULL_BAS_DIR/$F
+cp $F/*.asc $FULL_BAS_DIR/$F
+cp $F/*.pl $FULL_BAS_DIR/$F
+end
+

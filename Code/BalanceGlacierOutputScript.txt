@@ -1,0 +1,16 @@
+#!/bin/csh
+
+# Script Arguments ./BalanceGlacierOutputScript.txt <balance_glac6_7.txt> <run name>
+
+#convert to water year
+awk '{if($2 > 9){$1 = $1+1} print $0}' $1 > wy
+
+
+#Calculate Seasonal Balances, may need to adjust shoulder months
+awk '{if($2 > 9 || $2 < 5) print $1, $2, $7, $11}' wy > win_mb
+
+awk '{if($2 <= 9 && $2 >= 5) print $1, $2, $7, $11}' wy > sum_mb
+
+./agg_time.pl -i win_mb -o $2winter_mass.txt -sum 3,4 -in monthly -out yearly
+
+./agg_time.pl -i sum_mb -o $2summer_mass.txt -sum 3,4 -in monthly -out yearly

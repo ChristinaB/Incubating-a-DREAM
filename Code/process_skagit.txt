@@ -1,0 +1,296 @@
+#!/bin/csh
+
+
+foreach BAS (Ross_inlet BaldEagle BigBeaver Sulphide SkagitRiver_nr_Newhalem_abv_Thunder Baker Ross_outlet Swift Ruby Stetattle DIABLO GO_SIDE_2 Thunder GO_SIDE_4 GORGE THXW1 Goodell SkagitRiver_Newhalem_below_Thunder NEKW1 BAKER RockyLakeShannonUSGS BearLakeShannonUSGS ThunderLakeShannonUSGS ALMA Bacon SkagitRiver_aboveBacon Diobsud LakeShannon Marble Cascade SR_Marblemount Jones Jackman Childs MuddyCreekRedCabin CONW1 Alder Grandy Red Wiseman Jordan Finney Pressentin Coal Mill Day Loretta Hansen Illabot Gilligan Nookachamps UpperFinneyCreek Hilt MVEW1 EastForkNookachamps SaukRiver_nrSauk SKAGIT_OUT Rinker Big SUIATTLE_R Suiattle_ConfluenceSauk Tenas_ConfluenceSuiattle Everett SaukRiver_Darrington SR_abvClearCreek SaukRiver_abClearCreek_nrDarrington WhiteChuck Sauk_abWhitechuck_nrDarrington NorthForkSauk SouthForkSauk)
+
+set FULL_BAS_DIR = $1 # path for full basin output
+
+switch ($BAS)													# set column number for each basin in
+case Ross_inlet 
+set COL_NUM = 2
+breaksw
+
+case BaldEagle 
+set COL_NUM = 3
+breaksw
+
+case BigBeaver 
+set COL_NUM = 4
+breaksw
+
+case Sulphide 
+set COL_NUM = 5
+breaksw
+
+case SkagitRiver_nr_Newhalem_abv_Thunder 
+set COL_NUM = 6
+breaksw
+
+case Baker 
+set COL_NUM = 7
+breaksw
+
+case Ross_outlet 
+set COL_NUM = 8
+breaksw
+
+case Swift 
+set COL_NUM = 9
+breaksw
+
+case Ruby 
+set COL_NUM = 10
+breaksw
+
+case Stetattle 
+set COL_NUM = 11
+breaksw
+
+case DIABLO 
+set COL_NUM = 12
+breaksw
+
+case GO_SIDE_2 
+set COL_NUM = 13
+breaksw
+
+case Thunder 
+set COL_NUM = 14
+breaksw
+
+case GO_SIDE_4 
+set COL_NUM = 15
+breaksw
+
+case GORGE 
+set COL_NUM = 16
+breaksw
+
+case THXW1 
+set COL_NUM = 17
+breaksw
+
+case Goodell 
+set COL_NUM = 18
+breaksw
+
+case SkagitRiver_Newhalem_below_Thunder 
+set COL_NUM = 19
+breaksw
+
+case NEKW1 
+set COL_NUM = 20
+breaksw
+
+case BAKER 
+set COL_NUM = 21
+breaksw
+
+case RockyLakeShannonUSGS 
+set COL_NUM = 22
+breaksw
+
+case BearLakeShannonUSGS 
+set COL_NUM = 23
+breaksw
+
+case ThunderLakeShannonUSGS 
+set COL_NUM = 24
+breaksw
+
+case ALMA 
+set COL_NUM = 25
+breaksw
+
+case Bacon 
+set COL_NUM = 26
+breaksw
+
+case SkagitRiver_aboveBacon 
+set COL_NUM = 27
+breaksw
+
+case Diobsud 
+set COL_NUM = 28
+breaksw
+
+case LakeShannon 
+set COL_NUM = 29
+breaksw
+
+case Marble 
+set COL_NUM = 30
+breaksw
+
+case Cascade 
+set COL_NUM = 31
+breaksw
+
+case SR_Marblemount 
+set COL_NUM = 32
+breaksw
+
+case Jones 
+set COL_NUM = 33
+breaksw
+
+case Jackman 
+set COL_NUM = 34
+breaksw
+
+case Childs 
+set COL_NUM = 35
+breaksw
+
+case MuddyCreekRedCabin 
+set COL_NUM = 36
+breaksw
+
+case CONW1 
+set COL_NUM = 37
+breaksw
+
+case Alder 
+set COL_NUM = 38
+breaksw
+
+case Grandy 
+set COL_NUM = 39
+breaksw
+
+case Red 
+set COL_NUM = 40
+breaksw
+
+case Wiseman 
+set COL_NUM = 41
+breaksw
+
+case Jordan 
+set COL_NUM = 42
+breaksw
+
+case Finney 
+set COL_NUM = 43
+breaksw
+
+case Pressentin 
+set COL_NUM = 44
+breaksw
+
+case Coal 
+set COL_NUM = 45
+breaksw
+
+case Mill 
+set COL_NUM = 46
+breaksw
+
+case Day 
+set COL_NUM = 47
+breaksw
+
+case Loretta 
+set COL_NUM = 48
+breaksw
+
+case Hansen 
+set COL_NUM = 49
+breaksw
+
+case Illabot 
+set COL_NUM = 50
+breaksw
+
+case Gilligan 
+set COL_NUM = 51
+breaksw
+
+case Nookachamps 
+set COL_NUM = 52
+breaksw
+
+case UpperFinneyCreek 
+set COL_NUM = 53
+breaksw
+
+case Hilt 
+set COL_NUM = 54
+breaksw
+
+case MVEW1 
+set COL_NUM = 55
+breaksw
+
+case EastForkNookachamps 
+set COL_NUM = 56
+breaksw
+
+case SaukRiver_nrSauk 
+set COL_NUM = 57
+breaksw
+
+case SKAGIT_OUT 
+set COL_NUM = 58
+breaksw
+
+case Rinker 
+set COL_NUM = 59
+breaksw
+
+case Big 
+set COL_NUM = 60
+breaksw
+
+case SUIATTLE_R 
+set COL_NUM = 61
+breaksw
+
+case Suiattle_ConfluenceSauk 
+set COL_NUM = 62
+breaksw
+
+case Tenas_ConfluenceSuiattle 
+set COL_NUM = 63
+breaksw
+
+case Everett 
+set COL_NUM = 64
+breaksw
+
+case SaukRiver_Darrington 
+set COL_NUM = 65
+breaksw
+
+case SR_abvClearCreek 
+set COL_NUM = 66
+breaksw
+
+case SaukRiver_abClearCreek_nrDarrington 
+set COL_NUM = 67
+breaksw
+
+case WhiteChuck 
+set COL_NUM = 68
+breaksw
+
+case Sauk_abWhitechuck_nrDarrington 
+set COL_NUM = 69
+breaksw
+
+case NorthForkSauk 
+set COL_NUM = 70
+breaksw
+
+case SouthForkSauk 
+set COL_NUM = 71
+breaksw
+		
+endsw
+
+### get flow values from full basin, otherwise some stream output locations will be outside mask
+
+./dhsvm3hr.streamflow.only_2_dly.q.cms.scr $FULL_BAS_DIR/Streamflow.Only $FULL_BAS_DIR/$BAS.streamflow.daily.cms.txt $COL_NUM
+
+
+end

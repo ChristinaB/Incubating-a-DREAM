@@ -1,0 +1,30 @@
+#!/bin/tcsh -e
+# convert 3-HOURLY DHSVM flow output in Streamflow.Only to daily timestep, CMS
+# DHSVM outputs are in cubic-meters, so divide by 86400 (seconds in a day)
+
+# The input file and desired field number must be specified.  Output to <STDOUT>
+# AWW-20050615
+# mod Jeff Deems 20081014
+# to use actual field number (not offset from date), 
+# and to explicitly output flow in floating-point (avoid scientific notation)
+
+
+# check args ------------
+if ($#argv >= 3) then
+ set FILE = $1
+ set OUTFILE = $2
+ set FLD = $3
+ 
+else
+ echo "usage is dhsvm3hr_2_dly.q_CFS.scr <IN_FILE> <OUT_FILE> <FIELD#>"
+ echo "The input/output file and field number must be specifed."
+ exit 1
+endif
+
+tail -n +2 $FILE |\
+	awk '{c+=$'$FLD';j++;if(j==8){printf("%d %d %d %f\n",substr($1,7,4),substr($1,1,2),substr($1,4,2),c/86400);c=0;j=0;}}' >> temp
+
+awk 'BEGIN{FS="-"}{print $1, $2, $3, $4}' temp > $OUTFILE
+
+rm -rf temp
+

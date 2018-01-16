@@ -1,0 +1,8 @@
+#!/bin/csh
+foreach F(output_skagitHYDRO*)
+cd $F
+echo $F
+cp SaukRiver_nrSauk.streamflow.daily.cms.txt 12189500.streamflow.daily.cms.txt
+cd ..
+end
+
