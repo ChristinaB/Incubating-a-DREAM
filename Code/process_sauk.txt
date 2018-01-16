@@ -1,0 +1,72 @@
+#!/bin/csh
+
+
+foreach BAS (outlet 12189500 12187500 12187000 12186500 ErmineGlacier 12186000 VistaGlacier DustyGlacier ChocolateGlacier CoolGlacier 12185000 SuiattleGlacier HoneycombGlacier )
+
+set FULL_BAS_DIR = $1 # path for full basin output
+
+	switch ($BAS)													# set column number for each basin in
+		case outlet				# Streamflow.Only file
+			set COL_NUM = 2
+			breaksw
+	
+		case 12189500								# Streamflow.Only file
+			set COL_NUM = 3
+			breaksw
+	
+		case 12187500				# Streamflow.Only file
+			set COL_NUM = 4
+			breaksw
+	
+		case 12187000								# Streamflow.Only file
+			set COL_NUM = 5
+			breaksw
+
+		case 12186500				# Streamflow.Only file
+			set COL_NUM = 6
+			breaksw
+	
+		case ErmineGlacier								# Streamflow.Only file
+			set COL_NUM = 7
+			breaksw
+	
+		case 12186000				# Streamflow.Only file
+			set COL_NUM = 8
+			breaksw
+	
+		case VistaGlacier								# Streamflow.Only file
+			set COL_NUM = 9
+			breaksw
+			           
+		case DustyGlacier				# Streamflow.Only file
+			set COL_NUM = 10
+			breaksw
+		
+		case ChocolateGlacier				# Streamflow.Only file
+			set COL_NUM = 11
+			breaksw
+			
+		case CoolGlacier				# Streamflow.Only file
+			set COL_NUM = 12
+			breaksw
+			
+		case 12185000				# Streamflow.Only file
+			set COL_NUM = 13
+			breaksw
+			
+		case SuiattleGlacier				# Streamflow.Only file
+			set COL_NUM = 14
+			breaksw
+			
+		case HoneycombGlacier				# Streamflow.Only file
+			set COL_NUM = 15
+			breaksw
+		
+	endsw
+
+### get flow values from full basin, otherwise some stream output locations will be outside mask
+
+./dhsvm3hr.streamflow.only_2_dly.q.cms.scr $FULL_BAS_DIR/Streamflow.Only $FULL_BAS_DIR/$BAS.streamflow.daily.cms.txt $COL_NUM
+
+
+end

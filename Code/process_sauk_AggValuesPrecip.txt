@@ -1,0 +1,19 @@
+#!/bin/csh
+
+foreach BAS (Precip)
+
+set FULL_BAS_DIR = $1		# path for full basin output
+
+	switch ($BAS)													# set column number for each basin in
+		case Precip				# Streamflow.Only file
+			set COL_NUM = 2
+			breaksw
+	
+	endsw
+
+### get flow values from full basin, otherwise some stream output locations will be outside mask
+
+./dhsvm3hr.aggprecip.only_2_dly.m.scr $FULL_BAS_DIR/Aggregated.Values $FULL_BAS_DIR/$BAS.daily.m.txt $COL_NUM
+
+
+end
