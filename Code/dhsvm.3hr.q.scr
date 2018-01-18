@@ -1,4 +1,4 @@
-#!/bin/tcsh -e
+#!/bin/bash
 # convert 3-HOURLY DHSVM flow output in Streamflow.Only to daily timestep, CMS
 # DHSVM outputs are in cubic-meters, so divide by 3600*3 (seconds in a day)
 
