@@ -1,4 +1,4 @@
-#!/bin/csh
+#!/bin/bash
 
 
 foreach BAS (outlet 12189500 12187500 12187000 12186500 ErmineGlacier 12186000 VistaGlacier DustyGlacier ChocolateGlacier CoolGlacier 12185000 SuiattleGlacier HoneycombGlacier )
