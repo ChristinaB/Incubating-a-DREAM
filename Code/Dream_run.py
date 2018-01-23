@@ -89,7 +89,7 @@ dream_sampler=spotpy.algorithms.dream(dream_run, dbname='DREAM_hymod', dbformat=
 rep=10
 
 # Select five chains and set the Gelman-Rubin convergence limit
-nChains                = 4
+nChains                = 5
 convergence_limit      = 1.2
 runs_after_convergence = 10
 
