@@ -34,4 +34,7 @@ class Dream_run_setup(object):
         evaluation = pd.read_csv(validation_csv)
         self.evals = evaluation['value'].values                   
         print(len(self.evals))
+        
+    def parameters(self):
+        return spotpy.parameter.generate(self.params)
 
