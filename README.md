@@ -5,8 +5,9 @@ Visit
 1. [Incubating-a-DREAM wiki](https://github.com/ChristinaB/Incubating-a-DREAM/wiki) to see the paper in progress. 
 2. Prezi Presentation for [Visuals and Figures](https://prezi.com/view/X9KGi7p9zhEchXHwugcH/).
 3. HydroShare Resources
-  * [DHSVM Model Instance for Sauk Watershed](https://www.hydroshare.org/resource/abe2fd1e3fc74e889b78c2701872bd58/).
+  * [DHSVM Model Instance for Sauk Watershed](https://www.hydroshare.org/resource/abe2fd1e3fc74e889b78c2701872bd58/)
   * [DHSVM Forcing Files for Sauk Watershed](blah)
+  * [Observed Streamflow Download for Sauk River](https://www.hydroshare.org/resource/1ddfc8fd736f4947a04b8e0620991854/)
   * [Jupyter Notebooks for DHSVM + Landlab + DREAM Incubator Workflows](https://www.hydroshare.org/resource/7c3416535ab24d4f93b0b94741bb9572/)
 
 # Vision 
