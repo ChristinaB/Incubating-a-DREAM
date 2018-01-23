@@ -172,12 +172,349 @@ Unit Hydrograph File =                    # path for unit hydrograph file
 #Extreme East Lon = -120.84375
 #Grid Size = 0.0625
 #Met file path = forcings/data_
-Number of Stations = 1                    # Number of meteorological stations
-Station Name 1 = data_47.90625_-121.21875
-North Coordinate 1 = 5306364.605000
-East Coordinate 1 = 425269.826600
-Elevation 1 = 1310
-Station File 1 = forcings/data_47.90625_-121.21875
+Number of Stations = 57                    # Number of meteorological stations
+Station Name 1 = data_48.40625_-121.46875
+North Coordinate 1 = 5363388.028000
+East Coordinate 1 = 351987.588400
+Elevation 1 = 1195
+Station File 1 = forcings/data_48.40625_-121.46875
+
+Station Name 2 = data_48.40625_-121.53125
+North Coordinate 2 = 5363388.028000
+East Coordinate 2 = 648012.411600
+Elevation 2 = 647
+Station File 2 = forcings/data_48.40625_-121.53125
+
+Station Name 3 = data_48.40625_-121.59375
+North Coordinate 3 = 5361938.126000
+East Coordinate 3 = 574007.528200
+Elevation 3 = 406
+Station File 3 = forcings/data_48.40625_-121.59375
+
+Station Name 4 = data_48.34375_-121.09375
+North Coordinate 4 = 5354991.179000
+East Coordinate 4 = 425901.829400
+Elevation 4 = 1676
+Station File 4 = forcings/data_48.34375_-121.09375
+
+Station Name 5 = data_48.34375_-121.15625
+North Coordinate 5 = 5356441.450000
+East Coordinate 5 = 648193.742400
+Elevation 5 = 1343
+Station File 5 = forcings/data_48.34375_-121.15625
+
+Station Name 6 = data_48.34375_-121.21875
+North Coordinate 6 = 5356441.450000
+East Coordinate 6 = 351806.257600
+Elevation 6 = 1567
+Station File 6 = forcings/data_48.34375_-121.21875
+
+Station Name 7 = data_48.34375_-121.28125
+North Coordinate 7 = 5356441.450000
+East Coordinate 7 = 648193.742400
+Elevation 7 = 1205
+Station File 7 = forcings/data_48.34375_-121.28125
+
+Station Name 8 = data_48.34375_-121.34375
+North Coordinate 8 = 5354507.836000
+East Coordinate 8 = 500000.000000
+Elevation 8 = 1377
+Station File 8 = forcings/data_48.34375_-121.34375
+
+Station Name 9 = data_48.34375_-121.40625
+North Coordinate 9 = 5358859.386000
+East Coordinate 9 = 277715.883600
+Elevation 9 = 858
+Station File 9 = forcings/data_48.34375_-121.40625
+
+Station Name 10 = data_48.34375_-121.46875
+North Coordinate 10 = 5354991.179000
+East Coordinate 10 = 425901.829400
+Elevation 10 = 452
+Station File 10 = forcings/data_48.34375_-121.46875
+
+Station Name 11 = data_48.34375_-121.53125
+North Coordinate 11 = 5354991.179000
+East Coordinate 11 = 425901.829400
+Elevation 11 = 164
+Station File 11 = forcings/data_48.34375_-121.53125
+
+Station Name 12 = data_48.28125_-121.03125
+North Coordinate 12 = 5348044.304000
+East Coordinate 12 = 574188.724200
+Elevation 12 = 1768
+Station File 12 = forcings/data_48.28125_-121.03125
+
+Station Name 13 = data_48.28125_-121.09375
+North Coordinate 13 = 5351913.484000
+East Coordinate 13 = 277444.039100
+Elevation 13 = 1404
+Station File 13 = forcings/data_48.28125_-121.09375
+
+Station Name 14 = data_48.28125_-121.15625
+North Coordinate 14 = 5348044.304000
+East Coordinate 14 = 425811.275800
+Elevation 14 = 1346
+Station File 14 = forcings/data_48.28125_-121.15625
+
+Station Name 15 = data_48.28125_-121.21875
+North Coordinate 15 = 5349494.940000
+East Coordinate 15 = 351625.104500
+Elevation 15 = 1087
+Station File 15 = forcings/data_48.28125_-121.21875
+
+Station Name 16 = data_48.28125_-121.28125
+North Coordinate 16 = 5348044.304000
+East Coordinate 16 = 574188.724200
+Elevation 16 = 1024
+Station File 16 = forcings/data_48.28125_-121.28125
+
+Station Name 17 = data_48.28125_-121.34375
+North Coordinate 17 = 5348044.304000
+East Coordinate 17 = 574188.724200
+Elevation 17 = 856
+Station File 17 = forcings/data_48.28125_-121.34375
+
+Station Name 18 = data_48.28125_-121.40625
+North Coordinate 18 = 5349494.940000
+East Coordinate 18 = 648374.895500
+Elevation 18 = 557
+Station File 18 = forcings/data_48.28125_-121.40625
+
+Station Name 19 = data_48.28125_-121.46875
+North Coordinate 19 = 5351913.484000
+East Coordinate 19 = 277444.039100
+Elevation 19 = 996
+Station File 19 = forcings/data_48.28125_-121.46875
+
+Station Name 20 = data_48.28125_-121.53125
+North Coordinate 20 = 5349494.940000
+East Coordinate 20 = 351625.104500
+Elevation 20 = 343
+Station File 20 = forcings/data_48.28125_-121.53125
+
+Station Name 21 = data_48.28125_-121.59375
+North Coordinate 21 = 5347560.841000
+East Coordinate 21 = 500000.000000
+Elevation 21 = 339
+Station File 21 = forcings/data_48.28125_-121.59375
+
+Station Name 22 = data_48.21875_-120.96875
+North Coordinate 22 = 5342548.496000
+East Coordinate 22 = 351444.129200
+Elevation 22 = 1705
+Station File 22 = forcings/data_48.21875_-120.96875
+
+Station Name 23 = data_48.21875_-121.03125
+North Coordinate 23 = 5340613.922000
+East Coordinate 23 = 500000.000000
+Elevation 23 = 1509
+Station File 23 = forcings/data_48.21875_-121.03125
+
+Station Name 24 = data_48.21875_-121.09375
+North Coordinate 24 = 5342548.496000
+East Coordinate 24 = 351444.129200
+Elevation 24 = 1405
+Station File 24 = forcings/data_48.21875_-121.09375
+
+Station Name 25 = data_48.21875_-121.15625
+North Coordinate 25 = 5342548.496000
+East Coordinate 25 = 351444.129200
+Elevation 25 = 1147
+Station File 25 = forcings/data_48.21875_-121.15625
+
+Station Name 26 = data_48.21875_-121.21875
+North Coordinate 26 = 5344967.638000
+East Coordinate 26 = 277172.461000
+Elevation 26 = 1350
+Station File 26 = forcings/data_48.21875_-121.21875
+
+Station Name 27 = data_48.21875_-121.28125
+North Coordinate 27 = 5342548.496000
+East Coordinate 27 = 351444.129200
+Elevation 27 = 1171
+Station File 27 = forcings/data_48.21875_-121.28125
+
+Station Name 28 = data_48.21875_-121.34375
+North Coordinate 28 = 5344967.638000
+East Coordinate 28 = 277172.461000
+Elevation 28 = 1242
+Station File 28 = forcings/data_48.21875_-121.34375
+
+Station Name 29 = data_48.21875_-121.40625
+North Coordinate 29 = 5341097.504000
+East Coordinate 29 = 425720.811200
+Elevation 29 = 1112
+Station File 29 = forcings/data_48.21875_-121.40625
+
+Station Name 30 = data_48.21875_-121.46875
+North Coordinate 30 = 5341097.504000
+East Coordinate 30 = 425720.811200
+Elevation 30 = 926
+Station File 30 = forcings/data_48.21875_-121.46875
+
+Station Name 31 = data_48.21875_-121.53125
+North Coordinate 31 = 5342548.496000
+East Coordinate 31 = 351444.129200
+Elevation 31 = 613
+Station File 31 = forcings/data_48.21875_-121.53125
+
+Station Name 32 = data_48.21875_-121.59375
+North Coordinate 32 = 5340613.922000
+East Coordinate 32 = 500000.000000
+Elevation 32 = 609
+Station File 32 = forcings/data_48.21875_-121.59375
+
+Station Name 33 = data_48.15625_-120.96875
+North Coordinate 33 = 5334150.777000
+East Coordinate 33 = 574369.564300
+Elevation 33 = 1732
+Station File 33 = forcings/data_48.15625_-120.96875
+
+Station Name 34 = data_48.15625_-121.03125
+North Coordinate 34 = 5335602.118000
+East Coordinate 34 = 351263.332000
+Elevation 34 = 1273
+Station File 34 = forcings/data_48.15625_-121.03125
+
+Station Name 35 = data_48.15625_-121.09375
+North Coordinate 35 = 5334150.777000
+East Coordinate 35 = 425630.435700
+Elevation 35 = 1736
+Station File 35 = forcings/data_48.15625_-121.09375
+
+Station Name 36 = data_48.15625_-121.15625
+North Coordinate 36 = 5334150.777000
+East Coordinate 36 = 425630.435700
+Elevation 36 = 1628
+Station File 36 = forcings/data_48.15625_-121.15625
+
+Station Name 37 = data_48.15625_-121.21875
+North Coordinate 37 = 5333667.079000
+East Coordinate 37 = 500000.000000
+Elevation 37 = 1347
+Station File 37 = forcings/data_48.15625_-121.21875
+
+Station Name 38 = data_48.15625_-121.28125
+North Coordinate 38 = 5334150.777000
+East Coordinate 38 = 425630.435700
+Elevation 38 = 1148
+Station File 38 = forcings/data_48.15625_-121.28125
+
+Station Name 39 = data_48.15625_-121.34375
+North Coordinate 39 = 5334150.777000
+East Coordinate 39 = 425630.435700
+Elevation 39 = 1094
+Station File 39 = forcings/data_48.15625_-121.34375
+
+Station Name 40 = data_48.15625_-121.40625
+North Coordinate 40 = 5334150.777000
+East Coordinate 40 = 425630.435700
+Elevation 40 = 818
+Station File 40 = forcings/data_48.15625_-121.40625
+
+Station Name 41 = data_48.15625_-121.46875
+North Coordinate 41 = 5335602.118000
+East Coordinate 41 = 648736.668000
+Elevation 41 = 707
+Station File 41 = forcings/data_48.15625_-121.46875
+
+Station Name 42 = data_48.15625_-121.53125
+North Coordinate 42 = 5338021.847000
+East Coordinate 42 = 276901.149600
+Elevation 42 = 1014
+Station File 42 = forcings/data_48.15625_-121.53125
+
+Station Name 43 = data_48.15625_-121.59375
+North Coordinate 43 = 5338021.847000
+East Coordinate 43 = 276901.149600
+Elevation 43 = 912
+Station File 43 = forcings/data_48.15625_-121.59375
+
+Station Name 44 = data_48.15625_-121.65625
+North Coordinate 44 = 5338021.847000
+East Coordinate 44 = 276901.149600
+Elevation 44 = 1056
+Station File 44 = forcings/data_48.15625_-121.65625
+
+Station Name 45 = data_48.09375_-121.03125
+North Coordinate 45 = 5326720.312000
+East Coordinate 45 = 500000.000000
+Elevation 45 = 1719
+Station File 45 = forcings/data_48.09375_-121.03125
+
+Station Name 46 = data_48.09375_-121.09375
+North Coordinate 46 = 5327204.124000
+East Coordinate 46 = 425540.149300
+Elevation 46 = 2216
+Station File 46 = forcings/data_48.09375_-121.09375
+
+Station Name 47 = data_48.09375_-121.15625
+North Coordinate 47 = 5327204.124000
+East Coordinate 47 = 425540.149300
+Elevation 47 = 1700
+Station File 47 = forcings/data_48.09375_-121.15625
+
+Station Name 48 = data_48.09375_-121.21875
+North Coordinate 48 = 5327204.124000
+East Coordinate 48 = 574459.850700
+Elevation 48 = 1594
+Station File 48 = forcings/data_48.09375_-121.21875
+
+Station Name 49 = data_48.09375_-121.28125
+North Coordinate 49 = 5327204.124000
+East Coordinate 49 = 425540.149300
+Elevation 49 = 1274
+Station File 49 = forcings/data_48.09375_-121.28125
+
+Station Name 50 = data_48.09375_-121.34375
+North Coordinate 50 = 5327204.124000
+East Coordinate 50 = 574459.850700
+Elevation 50 = 1120
+Station File 50 = forcings/data_48.09375_-121.34375
+
+Station Name 51 = data_48.09375_-121.40625
+North Coordinate 51 = 5326720.312000
+East Coordinate 51 = 500000.000000
+Elevation 51 = 723
+Station File 51 = forcings/data_48.09375_-121.40625
+
+Station Name 52 = data_48.09375_-121.46875
+North Coordinate 52 = 5331076.111000
+East Coordinate 52 = 276630.105200
+Elevation 52 = 1176
+Station File 52 = forcings/data_48.09375_-121.46875
+
+Station Name 53 = data_48.03125_-121.15625
+North Coordinate 53 = 5321709.564000
+East Coordinate 53 = 350902.272400
+Elevation 53 = 1585
+Station File 53 = forcings/data_48.03125_-121.15625
+
+Station Name 54 = data_48.03125_-121.21875
+North Coordinate 54 = 5320257.544000
+East Coordinate 54 = 425449.952300
+Elevation 54 = 1382
+Station File 54 = forcings/data_48.03125_-121.21875
+
+Station Name 55 = data_48.03125_-121.28125
+North Coordinate 55 = 5319773.620000
+East Coordinate 55 = 500000.000000
+Elevation 55 = 1035
+Station File 55 = forcings/data_48.03125_-121.28125
+
+Station Name 56 = data_48.03125_-121.34375
+North Coordinate 56 = 5321709.564000
+East Coordinate 56 = 649097.727600
+Elevation 56 = 1373
+Station File 56 = forcings/data_48.03125_-121.34375
+
+Station Name 57 = data_48.03125_-121.40625
+North Coordinate 57 = 5324130.430000
+East Coordinate 57 = 276359.328200
+Elevation 57 = 1188
+Station File 57 = forcings/data_48.03125_-121.40625
+
 
 
 
