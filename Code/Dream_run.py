@@ -37,4 +37,28 @@ class Dream_run_setup(object):
         
     def parameters(self):
         return spotpy.parameter.generate(self.params)
+    
+    def simulation(self,x):
+        change_setting(config_file, "Lateral Conductivity 61", str(round(x[0],9)))
+        change_setting(config_file, "Depth Threshold 61", str(round(x[1],9)))
+        change_setting(config_file, "Maximum Infiltration 61", str(round(x[2],9)))
+        retcode = subprocess.call(dhsvm_cmd, shell=True)
+        print("Ran DHSVM: ", str(retcode))
+        simulations=[]
+        file_output = open(streamflow_only, 'r')
+        header_name = file_output.readlines()[0].split(' ')
+        with open(streamflow_only) as inf:
+            next(inf)
+            date_q = []
+            q_12189500 = []
+            for line in inf:
+                parts = line.split() 
+                if len(parts) > 1:
+                    date_q.append(parts[0])
+                    q_12189500.append(float(parts[2]))
+
+        Simulation_streamflow = pd.DataFrame({'x[0]':date_q, 'x[2]':q_12189500})
+        Simulation_streamflow.columns = [header_name[0], header_name[2]]
+        simulations = Simulation_streamflow['12189500'].values 
+        return simulations
 
