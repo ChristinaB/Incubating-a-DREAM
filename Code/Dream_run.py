@@ -65,4 +65,12 @@ class Dream_run_setup(object):
         Simulation_streamflow.columns = [header_name[0], header_name[2]]
         simulations = Simulation_streamflow['12189500'].values 
         return simulations
+    
+    def evaluation(self):
+        return self.evals.tolist()
+    
+    def objectivefunction(self,simulation,evaluation, params=None):
+        model_fit = spotpy.objectivefunctions.nashsutcliffe(evaluation,simulation)
+        print('Nashsutcliffe: ', model_fit)
+        return model_fit
 
