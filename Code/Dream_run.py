@@ -9,6 +9,8 @@ import os
 from scipy import stats
 import sys
 import subprocess
+import spotpy
+
 
 #Function to write to DHSVM config file simulated inputs from DREAM.
 def change_setting(config_file, setting_name, new_value, occurrence_loc='g'):
@@ -73,4 +75,13 @@ class Dream_run_setup(object):
         model_fit = spotpy.objectivefunctions.nashsutcliffe(evaluation,simulation)
         print('Nashsutcliffe: ', model_fit)
         return model_fit
+
+# Initialize the Dream Class
+dream_run=Dream_run_setup()
+
+# Create the Dream sampler of spotpy, al_objfun is set to None to force SPOTPY
+# to jump into the def objectivefunction in the Dream_run_setup class with 
+# nashsutcliffe as objectivefunction.
+sampler=spotpy.algorithms.dream(dream_run, dbname='DREAM_hymod', dbformat='csv',
+                                alt_objfun=None)
 
