@@ -82,6 +82,17 @@ dream_run=Dream_run_setup()
 # Create the Dream sampler of spotpy, al_objfun is set to None to force SPOTPY
 # to jump into the def objectivefunction in the Dream_run_setup class with 
 # nashsutcliffe as objectivefunction.
-sampler=spotpy.algorithms.dream(dream_run, dbname='DREAM_hymod', dbformat='csv',
+dream_sampler=spotpy.algorithms.dream(dream_run, dbname='DREAM_hymod', dbformat='csv',
                                 alt_objfun=None)
+
+#Select number of maximum repetitions
+rep=10
+
+# Select five chains and set the Gelman-Rubin convergence limit
+nChains                = 4
+convergence_limit      = 1.2
+runs_after_convergence = 10
+
+r_hat = dream_sampler.sample(rep,nChains=nChains,convergence_limit=convergence_limit, 
+                       runs_after_convergence=runs_after_convergence, acceptance_test_option = 6)
 
