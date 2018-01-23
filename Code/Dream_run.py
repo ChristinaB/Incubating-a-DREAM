@@ -38,13 +38,17 @@ class Dream_run_setup(object):
     def parameters(self):
         return spotpy.parameter.generate(self.params)
     
+    #setting up simulation for location:12189500 with predefined params and writing to config file 
     def simulation(self,x):
+        #write DREAM parameter input to config file.
         change_setting(config_file, "Lateral Conductivity 61", str(round(x[0],9)))
         change_setting(config_file, "Depth Threshold 61", str(round(x[1],9)))
         change_setting(config_file, "Maximum Infiltration 61", str(round(x[2],9)))
+        #run DHSVM with modified parameters in config file
         retcode = subprocess.call(dhsvm_cmd, shell=True)
         print("Ran DHSVM: ", str(retcode))
         simulations=[]
+        #read streamflow data from DHSVM output file
         file_output = open(streamflow_only, 'r')
         header_name = file_output.readlines()[0].split(' ')
         with open(streamflow_only) as inf:
