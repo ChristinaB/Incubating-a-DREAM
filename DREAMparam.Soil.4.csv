@@ -1,0 +1,5 @@
+﻿ParamID,parameter name,Benchmark,Min,Max
+1,Lateral Conductivity 61,0.0017,0.00001,0.01
+2,Exponential Decrease 61,0.5,0.25,2.5
+3,Lateral Conductivity 62,0.00017,0.00001,0.01
+4,Exponential Decrease 62,0.5,0.25,2.5

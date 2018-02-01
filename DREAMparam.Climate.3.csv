@@ -1,0 +1,4 @@
+﻿ParamID,parameter name,Benchmark,Min,Max
+1,Temperature Lapse Rate,-0.0048,-0.0025,-0.008
+2,Precipitation Lapse Rate,0.0006,0.0001,0.001
+3,Precipitation Multiplier,0.00001,0.000005,0.00003

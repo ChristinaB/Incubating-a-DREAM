@@ -1,0 +1,11 @@
+﻿ParamID,parameter name,Benchmark,Min,Max
+1,Temperature Lapse Rate,-0.0048,-0.0025,-0.008
+2,Precipitation Lapse Rate,0.0006,0.0001,0.001
+3,Precipitation Multiplier,0.00001,0.000005,0.00003
+4,Lateral Conductivity 61,0.0017,0.00001,0.01
+5,Exponential Decrease 61,0.5,0.25,2.5
+6,Lateral Conductivity 62,0.00017,0.00001,0.01
+7,Exponential Decrease 62,0.5,0.25,2.5
+8,Maximum Resistance 9,3000,500,3000
+9,Minimum Resistance 9,250,150,300
+10,Overstory Monthly LAI 9,0.5,0.5,6

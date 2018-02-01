@@ -1,0 +1,4 @@
+ParamID	parameter name	Benchmark	Min	Max
+1	Maximum Resistance 9	3000	500	3000
+2	Minimum Resistance 9	250	150	300
+3	Overstory Monthly LAI 9	0.5	0.5	6
