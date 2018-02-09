@@ -87,7 +87,7 @@ Point East           =                    # East coordinate for point modelif Ex
 Time Step            = 3                  # Model time step (hours)
 #Model Start          = 12/31/1959-21      # Model start time (MM/DD/YYYY-HH)
 #Model End          = 12/31/2013-21      # Model start time (MM/DD/YYYY-HH)
-Model Start          = 10/01/2006-00      # Model start time (MM/DD/YYYY-HH)
+Model Start          = 11/01/2006-00      # Model start time (MM/DD/YYYY-HH)
 Model End            = 11/30/2006-00      # Model end time (MM/DD/YYYY-HH)
 #Model End            = 07/31/2003-00      # Model end time (MM/DD/YYYY-HH)
 ################################################################################
